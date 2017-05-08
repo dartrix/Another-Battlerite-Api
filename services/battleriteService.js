@@ -97,6 +97,8 @@ module.exports = function (config, accountHelper) {
 
                       }
                   });
+                } else {
+                  cb({code: 404, message: 'Season not found.'});
                 }
 
             } else {
